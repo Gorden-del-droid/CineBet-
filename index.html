@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine🎞Bet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .header {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .header span.white { color: white; }
+    .header span.green { color: #00ff00; }
+    .tagline {
+      color: #00ff00;
+      margin-bottom: 20px;
+    }
+    .scene {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .scene-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .prediction-ui {
+      background-color: #2a2a2a;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .option {
+      padding: 10px;
+      background-color: #3a3a3a;
+      border: 1px solid #444;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .option.selected {
+      background-color: #00ff00;
+      color: black;
+    }
+    .wallet {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+    }
+    .result, .actions {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .button {
+      background-color: #00ff00;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Cine<span class="green">Bet</span> 🎞</div>
+  <div class="tagline">Introducing the next revolution in entertainment</div>
+  <div class="scene">
+    <div class="scene-title">Bar Scene: Sam and the Fan</div>
+    <p>A noisy bar. Sam turns angrily after a fan shakes his shirt.</p>
+    <div class="wallet">
+      <div>Balance: <strong>$1.00</strong></div>
+      <div>Stake: <strong>$1.00</strong></div>
+    </div>
+    <div class="prediction-ui">
+      <div class="option">1. Sam hits the guy with a bottle ($1.45)</div>
+      <div class="option">2. The fan apologizes ($1.27)</div>
+      <div class="option selected">3. Sam ignores him ($1.80)</div>
+    </div>
+    <div class="result">
+      ✅ Correct Prediction<br>
+      Amount: <strong>$1.80</strong>
+    </div>
+    <div class="actions">
+      <button class="button">Continue Playing</button>
+      <button class="button">Withdraw Winnings</button>
+    </div>
+  </div>
+</body>
+</html>
